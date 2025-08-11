@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Airplane Ticket Reservation System</title>
+</head>
+<body style="font-family: 'Segoe UI', sans-serif; margin:0; padding:0; background:#fff; color:#333;">
+
+<!-- Banner -->
+<header style="text-align:center; background:#004080; padding:20px; color:white;">
+
+<h1 style="display:inline; margin-left:10px;">Airplane Ticket Reservation</h1>
+<nav style="margin-top:10px;">
+<a href="#tickets" style="color:white; margin:0 15px; text-decoration:none;">Available Flights</a>
+<a href="#details" style="color:white; margin:0 15px; text-decoration:none;">Flight Details</a>
+<a href="#reservation" style="color:white; margin:0 15px; text-decoration:none;">Reservation</a>
+</nav>
+</header>
+
+<!-- Flight Table -->
+<section id="tickets" style="padding:20px;">
+<h2 style="color:#004080;">Available Flights</h2>
+<table border="1" cellpadding="10" cellspacing="0" style="width:100%; border-collapse:collapse; background:#fff; box-shadow:0 0 8px rgba(0,0,0,0.1);">
+<thead style="background:#004080; color:white;">
+<tr>
+<th>Flight Number</th>
+<th>Route</th>
+<th>Date</th>
+<th>Time</th>
+<th>Seats</th>
+<th>Price (₹)</th>
+</tr>
+</thead>
+<tbody>
+<tr style="text-align:center; background:#f9f9f9;">
+<td>Indigo 332</td>
+<td>Chennai → Dubai</td>
+<td>10-Aug-2025</td>
+<td>10:00 AM</td>
+<td>180</td>
+<td>15,000</td>
+</tr>
+<tr style="text-align:center;">
+<td>Indigo 2306</td>
+<td>Delhi → London</td>
+<td>12-Aug-2025</td>
+<td>11:45 PM</td>
+<td>200</td>
+<td>55,000</td>
+</tr>
+<tr style="text-align:center; background:#f9f9f9;">
+<td>Air India 652</td>
+<td>Bangalore → Singapore</td>
+<td>15-Aug-2025</td>
+<td>06:30 AM</td>
+<td>150</td>
+<td>22,000</td>
+</tr>
+</tbody>
+</table>
+</section>
+
+<!-- Flight Details -->
+
+<section id="details" style="padding:20px; background:#eef5ff;">
+<h2 style="color:#004080;"> Flight Details</h2>
+<p>Fly with comfort and luxury! Every ticket includes:</p>
+<ul>
+<li> Business & Economy class options</li>
+<li> Complimentary meals & beverages</li>
+<li> Free WiFi & entertainment system</li>
+<li> 30kg baggage allowance</li>
+<li> Professional crew & world-class service</li>
+</ul>
+</section>
+
+
+<!-- Reservation Form -->
+<section id="reservation" style="padding:20px;">
+<h2 style="color:#004080;"> Book Your Flight</h2>
+<form style="background:#fff; padding:20px; border-radius:8px; width:60%; margin:auto; box-shadow:0 0 10px rgba(0,0,0,0.1);">
+<label for="name">Full Name:</label><br>
+<input type="text" id="name" name="name" required style="width:100%; padding:8px; margin:5px 0; border:1px solid #ccc; border-radius:4px;"><br><br>
+<label for="email">Email:</label><br>
+<input type="email" id="email" name="email" required style="width:100%; padding:8px; margin:5px 0; border:1px solid #ccc; border-radius:4px;"><br><br>
+<label for="route">Select Route:</label><br>
+<select id="route" name="route" required style="width:100%; padding:8px; margin:5px 0; border:1px solid #ccc; border-radius:4px;">
+<option value="Chennai-Dubai">Chennai → Dubai</option>
+<option value="Delhi-London">Delhi → London</option>
+<option value="Bangalore-Singapore">Bangalore → Singapore</option>
+</select><br><br>
+<label for="seats">Number of Seats:</label><br>
+<input type="number" id="seats" name="seats" min="1" max="10" required style="width:100%; padding:8px; margin:5px 0; border:1px solid #ccc; border-radius:4px;"><br><br>
+<button type="submit" style="background:#004080; color:#fff; font-weight:bold; padding:10px 20px; border:none; cursor:pointer; border-radius:5px;">Book Now</button>
+</form>
+</section>
+
+</body>
+</html>
